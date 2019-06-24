@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+	<style>
+		body{
+			text-align :center;
+			background-color : darkgray;
+		}
+	
+	
+	
+	</style>
+		<meta charset="UTF-8" />
+		<script>
+			 function bbb(){	
+				
+					let numFromInput = (document.getElementById("aaa").value).split("");//להפוך את האינפוט למערך
+					console.log(numFromInput);
+					
+					let numToNumber = Number(numFromInput.join(''));//להפוך את המערך המספרי למספר פשוט
+					console.log(numToNumber);
+					
+					let numberPlusOne = numToNumber+1;// להוסיף אחד למספר
+					console.log(numberPlusOne);
+					
+					let numberToAnArray = numberPlusOne.toString().split('');// להחזיר את המספר למערך
+					console.log(numberToAnArray);
+					
+					document.getElementById("nuum").innerHTML = numberToAnArray;
+					//נראה לי שהחידה מצמצמת אותנו לחשוב על כל מספר במערך בפני עצמו 
+					//  ?נראה לי שגוגל בראיון שעשו לנו עבדו עלינו, מה אתם אומרים 
+				
+			}
+
+		</script>
+	</head>
+	
+	
+	<body dir="rtl">
+
+		<div id="nuum"></div>
+		
+		<button onclick="bbb()">click !!!</button>
+		<br><br><br>	  
+		<input type=number id="aaa" placeholder="הזן מספר"/>
+
+	</body>
+</html>
